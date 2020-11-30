@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "Result",
     products: [
-        .library(name: "Result", targets: ["Result"]),
+        .library(name: "Result", .type: .dynamic, targets: ["Result"]),
     ],
     targets: [
         .target(name: "Result", dependencies: [], path: "Result"),
